@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import LoginButton from "./login";
+import LogoutButton from "./logout";
 
 const MainNav = () => (
   <Nav className="mr-auto">
@@ -28,6 +30,9 @@ const MainNav = () => (
     >
       External API
     </Nav.Link>
+
+    <LoginButton></LoginButton>
+    <LogoutButton></LogoutButton>
   </Nav>
 );
 
